@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
+    <PackageReference Include="Microservices.Common.Application.Adapters.EventBus.Core" Version="1.0.0" />
+    <PackageReference Include="Microservices.Common.Application.Core" Version="1.0.0" />
+    <PackageReference Include="Microservices.Common.Application.Repositories.MongoDb.Core" Version="1.0.0" />
+    <PackageReference Include="Microservices.Common.Application.Repositories.Sql.Core" Version="1.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ESCMB.Domain\ESCMB.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Adapters\" />
+    <Folder Include="Integrations\Events\" />
+    <Folder Include="Integrations\Handlers\" />
+    <Folder Include="UseCases\DummyEntity\Notifications\" />
+  </ItemGroup>
+
+</Project>
